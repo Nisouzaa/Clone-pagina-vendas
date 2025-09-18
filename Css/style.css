@@ -70,3 +70,12 @@ header nav {
   padding: 0.4rem 1rem;
   color: #fff;
 }
+
+/* Ribbon */
+#ribbon{
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: #ccc;
+  display: flex;
+  align-items: center;
+}
