@@ -92,6 +92,12 @@ header nav {
   justify-content: center;
 }
 
+#main-content #title{
+  margin: 1rem;
+  font-size: 1.2rem;
+}
+
+
 #main-content #subtitle {
   margin: 1rem;
   font-size: 4rem;
@@ -149,6 +155,9 @@ header nav {
   width: 2rem;
   height: 2rem;
   border-radius: 50%;
+  box-shadow: 1px 1px 1px;
+  border: 4px solid #fff;
+  pointer-events: none;
 }
 
 #image-picker li .description {
@@ -175,4 +184,36 @@ header nav {
 
 #blue .color {
   background-color: #a7c1d9;
+}
+
+.selected {
+  outline: 2px solid #43a1ff;
+}
+
+/* Mobile  */
+@media (max-width: 480px) {
+  #navbar li {
+    display: none;
+  }
+
+  #navbar #logo {
+    display: flex;
+  }
+
+  #bottom-header-links a {
+    display: none;
+  }
+
+  #bottom-header-links .btn {
+    display: flex;
+  }
+
+  #main-content {
+    padding: 2rem;
+    overflow: hidden;
+  }
+
+  #main-content #subtitle{
+    font-size: 3rem;
+  }
 }
